@@ -1,0 +1,19 @@
+1.$() 来调用jq函数
+   参数：匿名函数 $(function() {
+
+   })
+
+        css选择器 代表选中某个节点
+          $('div')
+          $(.'one')
+
+        html的片段
+          append 
+          $('div').append($('<span>'))
+
+        element元素
+          var $a = $('span');
+           $('div').append($('$a'))
+
+
+2.jquery方法都是做批量操作
