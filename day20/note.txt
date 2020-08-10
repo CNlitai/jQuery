@@ -17,3 +17,22 @@
 
 
 2.jquery方法都是做批量操作
+
+
+
+3.选择器
+  基本选择器
+  层次选择器
+  过滤器
+    :first
+    :last
+    :eq(index)
+    :odd
+    :even
+    :lt(index)    索引小于index
+    :gt(index)
+    :header  选中标题
+
+
+4.内容过滤器
+  
