@@ -57,6 +57,34 @@
 			height: 40px;
 		}
 	</style>
+
+	<script>
+		$(function() {
+			function login() {
+				var username = $('input[name=username]').val();
+				var password = $('input[name=password]').val();
+				var obj = {
+					username: username,
+					password: password
+				}
+				// console.log(obj)
+				$.ajax({
+					url:'http://139.196.24.143:7788/user/login',
+					method:'POST',
+					contentType:'application/json',
+					data:JSON.stringify(obj),
+					success:function(res){
+						// console.log(res)
+						// $(location).attr('href','./login.html')
+					},
+					error:function(e){
+						console.log(e)
+					}
+				})
+			}
+			$('button').click(login)
+		})
+	</script>
 </head>
 <body>
 	<div class="main">
