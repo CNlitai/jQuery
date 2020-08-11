@@ -1,0 +1,64 @@
+jq
+  js的库 封装dom操作
+
+  jquery本身就是一个函数
+  $()调用
+    参数
+
+
+:visible  选中的是隐藏 占据屏幕空间
+:hidden   选中的是隐藏 不占据屏幕 
+
+dom节点
+  新增节点
+    append
+    appendTo
+    after 
+    insertAfter
+    before
+    insertBefore
+    prepend
+    prependTo
+
+  删除节点
+    empty   把父元素的内容置空
+    删除一条数据
+    $.get('",data,function){
+      load()
+    }
+    load() {
+      
+    }
+
+
+    remove 删除某个节点 
+      删除事件
+
+    detach 删除节点
+      删除事件
+
+    替换节点
+      replace 
+
+
+  事件
+    绑定事件
+      $('btn').click()
+      $('btn').on('type',function(){
+        type:事件类型
+      })
+
+
+解绑    
+      off
+        $(''btn).off()   表示btn上的事件全部解绑
+        $('btn').off('click')
+
+    
+
+模拟点击
+    trigger
+      $('btn').trigger()
+
+
+
