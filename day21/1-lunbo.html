@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轮播</title>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .main{
+      width: 200px;
+      height: 150px;
+      background-color: pink;
+    }
+
+    span{
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      text-align: center;
+      background-color:green;
+      cursor: pointer;
+    }
+  </style>
+<script>
+  $(function() {
+    $('.content').on({
+      mouseover:function(){
+        //
+        if($(this).text() == '1'){
+          $('main').css('background-image','url()')
+        }else if($(this).text == '2'){
+          $('main').css('background-image','url()')
+        }
+
+      }
+    },'span')
+  })
+</script>
+
+</head>
+<body>
+  <div class="main"></div>
+  <div class="content">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+  </div>
+</body>
+</html>
