@@ -1,0 +1,15 @@
+<div>
+  栏目管理
+</div>
+
+<script>
+  $(function() {
+    function loadCategory() {
+      $ajax({
+        url:baseUrl+'/category/findAll',
+        method:'GET',
+
+      })
+      }
+  })
+</script>
